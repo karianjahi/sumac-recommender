@@ -3,7 +3,7 @@ This is the main file where flask is to be launched
 """
 
 # import our flask module
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 # We need to actually tell flask that this is the file that launches it
 app = Flask(__name__)
@@ -19,6 +19,8 @@ def index():
 
 @app.route("/recommender")
 def recommend_movies():
+    user_input = dict(request.args)
+    print(user_input)
     random_movies = ["movie1", "movie2", "movie3", "movies4"]
     return render_template("recommendations.html", movies=random_movies)
 # To test if the server can open, we shall make sure that only when this file is used directly is when we can open a new web server
