@@ -19,7 +19,7 @@ def index():
 
 @app.route("/recommender")
 def recommend_movies():
-    random_movies = ["movie1", "movie2", "movie3"]
+    random_movies = ["movie1", "movie2", "movie3", "movies4"]
     return render_template("recommendations.html", movies=random_movies)
 # To test if the server can open, we shall make sure that only when this file is used directly is when we can open a new web server
 if __name__ == "__main__":
