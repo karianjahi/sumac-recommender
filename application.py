@@ -21,7 +21,14 @@ def hello_world():
 @app.route("/recommender")
 def recommend_movies():
     movies = ["movie1", "movie2", "movie3"]
-    return movies
+    return f'''
+            <h1>These are your movie recommendations</h1>
+            <ol>
+                <li>{movies[0]}</li>
+                <li>{movies[1]}</li>
+                <li>{movies[2]}</li>
+            </ol>
+             '''
 
 # To test if the server can open, we shall make sure that only when this file is used directly is when we can open a new web server
 if __name__ == "__main__":
