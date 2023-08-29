@@ -3,7 +3,7 @@ This is the main file where flask is to be launched
 """
 
 # import our flask module
-from flask import Flask
+from flask import Flask, render_template
 
 # We need to actually tell flask that this is the file that launches it
 app = Flask(__name__)
@@ -14,9 +14,8 @@ app = Flask(__name__)
 # "/" means home page.
 
 @app.route("/")
-def hello_world():
-    return '''<h1 style="color:green">Hello world</h1>
-                <p>This application recommends movies to users! </p>'''
+def index():
+    return render_template("index.html")
 
 @app.route("/recommender")
 def recommend_movies():
