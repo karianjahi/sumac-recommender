@@ -15,7 +15,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return 'hello world'
+    return '''<h1 style="color:green">Hello world</h1>
+                <p>This application recommends movies to users! </p>'''
 
 # To test if the server can open, we shall make sure that only when this file is used directly is when we can open a new web server
 if __name__ == "__main__":
