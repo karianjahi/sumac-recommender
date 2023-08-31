@@ -9,6 +9,13 @@
     <h1 style="color:green">Hello world</h1>
     <p>This application recommends movies to users! </p>
     <form action="/recommender">
+        <select name="method">
+            <option>random</option>
+            <option>popular</option>
+            <option>nmf</option>
+            <option>cluster</option>
+        </select>
+        <br><br>
         Movie1:
         <input type="text" name="movie1" placeholder="0.0 - 5.0">
         <br><br>
