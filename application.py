@@ -2,6 +2,10 @@
 This is the main file where flask is to be launched
 """
 
+"""
+IF you want to kill a port you can use:
+fuser -n tcp -k <port number>
+"""
 # import our flask module
 from flask import Flask, render_template, request
 from recommend_some_movies import recommend_nmf
