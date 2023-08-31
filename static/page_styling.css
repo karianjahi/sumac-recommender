@@ -1,0 +1,45 @@
+body {
+    max-width: 100%;
+    font-family: Monaco;
+    background-color: blue;
+    color: white;
+    margin-left: 20%;
+    margin-right:20%;
+}
+
+select {
+    font-family: arial;
+    font-weight: bolder;
+    color: green;
+    background-color: black;
+}
+
+select:hover {
+    color:red;
+    font-size: 200%;
+}
+
+input {
+    font-family: Monaco;
+    font-size: 100%;
+}
+
+button {
+    font-family: monaco;
+    font-weight: bold;
+    background-color: magenta;
+    color: white;
+}
+
+button:hover{
+    color:black;
+    transform: scale(1.5) rotate(10deg);
+}
+
+h1 {
+    font-size: 120%;
+}
+
+img {
+    text-align: center;
+}
